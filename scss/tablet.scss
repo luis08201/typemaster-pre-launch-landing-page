@@ -1,4 +1,4 @@
-@import "../resource/resource.scss";
+@import "../scss/resource/resource.scss";
 
 .header{
     padding: 40px;
@@ -34,11 +34,12 @@
   &__photoOne {
     width: 214px;
     height: 320px;
-    background-image: url(../../assets/tablet/image-phone-and-keyboard.jpg);
+     background-image: url(../assets/tablet/image-phone-and-keyboard.jpg);
+   
   }
 
   &__photoTwo {
-    background-image: url(../../assets/tablet/image-glass-and-keyboard.jpg);
+    background-image: url(../assets/tablet/image-glass-and-keyboard.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 445px;

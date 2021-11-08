@@ -47,7 +47,7 @@ textarea {
   position: absolute;
   top: 22px;
   right: -22%;
-  background-image: url(../../assets/shared/pattern-square.svg);
+  background-image: url(../assets/shared/pattern-square.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 255px;
@@ -101,7 +101,7 @@ textarea {
   position: absolute;
   bottom: 22px;
   left: -24%;
-  background-image: url(../../assets/shared/pattern-square.svg);
+  background-image: url(../assets/shared/pattern-square.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 255px;
@@ -139,11 +139,11 @@ textarea {
 .mechanicalWireless__photoOne {
   width: 255px;
   height: 480px;
-  background-image: url(../../assets/desktop/image-phone-and-keyboard.jpg);
+  background-image: url(../assets/desktop/image-phone-and-keyboard.jpg);
 }
 
 .mechanicalWireless__photoTwo {
-  background-image: url(../../assets/desktop/image-glass-and-keyboard.jpg);
+  background-image: url(../assets/desktop/image-glass-and-keyboard.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 445px;
