@@ -1,0 +1,128 @@
+@import "../resource/resource.scss";
+
+.main {
+  overflow: hidden;
+}
+
+.home {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "article picture";
+  align-items: center;
+  position: relative;
+  overflow: unset;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: -22%;
+    background-image: url(../../assets/shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 255px;
+    height: 240px;
+  }
+
+  &__article {
+    grid-area: article;
+  }
+
+  &__picture {
+    grid-area: picture;
+    width: 540px;
+    height: 480px;
+  }
+
+  &__photo {
+    position: relative;
+    right: 0%;
+  }
+}
+
+.mechanicalWireless {
+  min-width: 280px;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 23px 24px;
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-areas: "picture article";
+  place-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: unset;
+  gap:30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+    left: -24%;
+    background-image: url(../../assets/shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 255px;
+    height: 240px;
+    z-index:-1;
+  }
+
+  &__pictures {
+    grid-area: picture;
+  }
+
+  &__article {
+    grid-area: article;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+
+    &--secondheading {
+      width: auto;
+      padding: 0;
+    }
+
+    &--paragraph {
+      padding: 0;
+    }
+  }
+
+  &__photoOne {
+    width: 255px;
+    height: 480px;
+    background-image: url(../../assets/desktop/image-phone-and-keyboard.jpg);
+  }
+
+  &__photoTwo {
+    background-image: url(../../assets/desktop/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 445px;
+    height: 480px;
+  }
+}
+
+.features {
+  padding: 23px 24px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "card1 card2 card3 card4";
+  align-items: flex-start;
+  column-gap: 30px;
+
+  &__item {
+
+    &:nth-child(1) {
+      grid-area: card1;
+    }
+    &:nth-child(2) {
+      grid-area: card2;
+    }
+    &:nth-child(3) {
+      grid-area: card3;
+    }
+    &:nth-child(4) {
+      grid-area: card4;
+    }
+  }
+}

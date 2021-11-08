@@ -1,0 +1,94 @@
+@import "../resource/resource.scss";
+
+.header{
+    padding: 40px;
+}
+
+.home {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "article picture";
+  gap: 64px;
+  padding: 23px 39px;
+
+  &__article {
+    grid-area: article;
+  }
+
+  &__picture {
+    grid-area: picture;
+  }
+
+  &__photo {
+    right: 33.7%;
+  }
+}
+
+.mechanicalWireless {
+  margin-top: 17px;
+
+  &__pictures {
+    left: 0;
+    justify-content: center;
+  }
+
+  &__photoOne {
+    width: 214px;
+    height: 320px;
+    background-image: url(../../assets/tablet/image-phone-and-keyboard.jpg);
+  }
+
+  &__photoTwo {
+    background-image: url(../../assets/tablet/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 445px;
+    height: 320px;
+  }
+
+  &__article {
+    padding: 23px 39px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+
+    &--secondheading {
+      text-align: left;
+      padding-right: 90px;
+    }
+
+    &--paragraph {
+      padding-left: 10px;
+      text-align: left;
+    }
+  }
+}
+
+.features {
+  padding: 23px 98px 23px 39px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4";
+  row-gap: 72px;
+  column-gap: 69px;
+
+  &__item {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+
+    &:nth-child(1) {
+      grid-area: card1;
+    }
+    &:nth-child(2) {
+      grid-area: card2;
+    }
+    &:nth-child(3) {
+      grid-area: card3;
+    }
+    &:nth-child(4) {
+      grid-area: card4;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+:root {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  --orange:#f16718;
+  --lightOrange:#FF9B62;
+  --darkBlue:#162542;
+  --lightBlue:#7B8BAD;
+  --white:#ffffff;
+  --whiteOff:#E8EFF2;
+}
+
+button,
+input,
+textarea {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header {
+  padding: 40px;
+}
+
+.home {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "article picture";
+  gap: 64px;
+  padding: 23px 39px;
+}
+
+.home__article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: article;
+}
+
+.home__picture {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: picture;
+}
+
+.home__photo {
+  right: 33.7%;
+}
+
+.mechanicalWireless {
+  margin-top: 17px;
+}
+
+.mechanicalWireless__pictures {
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mechanicalWireless__photoOne {
+  width: 214px;
+  height: 320px;
+  background-image: url(../../assets/tablet/image-phone-and-keyboard.jpg);
+}
+
+.mechanicalWireless__photoTwo {
+  background-image: url(../../assets/tablet/image-glass-and-keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 445px;
+  height: 320px;
+}
+
+.mechanicalWireless__article {
+  padding: 23px 39px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 36px;
+}
+
+.mechanicalWireless__article--secondheading {
+  text-align: left;
+  padding-right: 90px;
+}
+
+.mechanicalWireless__article--paragraph {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.features {
+  padding: 23px 98px 23px 39px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "card1 card2" "card3 card4";
+  row-gap: 72px;
+  -webkit-column-gap: 69px;
+          column-gap: 69px;
+}
+
+.features__item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.features__item:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
+}
+
+.features__item:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card2;
+}
+
+.features__item:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card3;
+}
+
+.features__item:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card4;
+}
+/*# sourceMappingURL=tablet.css.map */

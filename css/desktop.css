@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+:root {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  --orange:#f16718;
+  --lightOrange:#FF9B62;
+  --darkBlue:#162542;
+  --lightBlue:#7B8BAD;
+  --white:#ffffff;
+  --whiteOff:#E8EFF2;
+}
+
+button,
+input,
+textarea {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.home {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "article picture";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: unset;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: -22%;
+  background-image: url(../../assets/shared/pattern-square.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 255px;
+  height: 240px;
+}
+
+.home__article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: article;
+}
+
+.home__picture {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: picture;
+  width: 540px;
+  height: 480px;
+}
+
+.home__photo {
+  position: relative;
+  right: 0%;
+}
+
+.mechanicalWireless {
+  min-width: 280px;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 23px 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "picture article";
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  overflow: unset;
+  gap: 30px;
+}
+
+.mechanicalWireless::after {
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  left: -24%;
+  background-image: url(../../assets/shared/pattern-square.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 255px;
+  height: 240px;
+  z-index: -1;
+}
+
+.mechanicalWireless__pictures {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: picture;
+}
+
+.mechanicalWireless__article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: article;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  text-align: center;
+}
+
+.mechanicalWireless__article--secondheading {
+  width: auto;
+  padding: 0;
+}
+
+.mechanicalWireless__article--paragraph {
+  padding: 0;
+}
+
+.mechanicalWireless__photoOne {
+  width: 255px;
+  height: 480px;
+  background-image: url(../../assets/desktop/image-phone-and-keyboard.jpg);
+}
+
+.mechanicalWireless__photoTwo {
+  background-image: url(../../assets/desktop/image-glass-and-keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 445px;
+  height: 480px;
+}
+
+.features {
+  padding: 23px 24px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "card1 card2 card3 card4";
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.features__item:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
+}
+
+.features__item:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card2;
+}
+
+.features__item:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card3;
+}
+
+.features__item:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: card4;
+}
+/*# sourceMappingURL=desktop.css.map */
